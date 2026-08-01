@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&forHandle=@CrnaSoba&key=AIzaSyBq1tjxGJKj_w-uxC-xpJNLiReBZGYUoeM\")",
+      "Bash(curl -s \"https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=UUb_aZr0Y5vVskMoSNredCQA&key=AIzaSyBq1tjxGJKj_w-uxC-xpJNLiReBZGYUoeM\")",
+      "PowerShell($b = [System.IO.File]::ReadAllBytes\\(\"c:\\\\Users\\\\bulij\\\\Desktop\\\\Black Room Studio\\\\src\\\\assets\\\\limenka.png\"\\); \"colorType=$\\($b[25]\\) bitDepth=$\\($b[24]\\)\"; \"width=$\\([BitConverter]::ToUInt32\\($b[19..16],0\\)\\) height=$\\([BitConverter]::ToUInt32\\($b[23..20],0\\)\\)\"; \"sizeKB=$\\([math]::Round\\($b.Length/1KB,1\\)\\)\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Bitmap]::FromFile\\(\"c:\\\\Users\\\\bulij\\\\Desktop\\\\Black Room Studio\\\\src\\\\assets\\\\limenka.png\"\\); foreach \\($p in @\\(@\\(0,0\\),@\\(423,0\\),@\\(0,588\\),@\\(423,588\\),@\\(212,294\\),@\\(10,300\\)\\)\\) { $c = $img.GetPixel\\($p[0],$p[1]\\); \"\\($\\($p[0]\\),$\\($p[1]\\)\\) A=$\\($c.A\\) R=$\\($c.R\\) G=$\\($c.G\\) B=$\\($c.B\\)\" }; $img.Dispose\\(\\))",
+      "Bash(npx vite *)"
+    ]
+  }
+}
